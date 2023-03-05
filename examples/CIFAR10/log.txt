@@ -1,0 +1,131 @@
+[2022-09-23 11:52:17] :vision_transformer.utils.logger: [INFO] loss: 2.0047439576718755
+[2022-09-23 11:52:38] :vision_transformer.utils.logger: [INFO] loss: 1.8455862294370755
+[2022-09-23 11:52:59] :vision_transformer.utils.logger: [INFO] loss: 1.668046386097186
+[2022-09-23 11:53:20] :vision_transformer.utils.logger: [INFO] loss: 1.5547390163135224
+[2022-09-23 11:53:41] :vision_transformer.utils.logger: [INFO] loss: 1.5191041231155396
+[2022-09-23 11:54:03] :vision_transformer.utils.logger: [INFO] loss: 1.4730506495545848
+[2022-09-23 11:54:24] :vision_transformer.utils.logger: [INFO] loss: 1.4240679403844352
+[2022-09-23 11:54:45] :vision_transformer.utils.logger: [INFO] loss: 1.3951952935407719
+[2022-09-23 11:55:06] :vision_transformer.utils.logger: [INFO] loss: 1.3713871238711544
+[2022-09-23 11:55:27] :vision_transformer.utils.logger: [INFO] loss: 1.3562521247056345
+[2022-09-23 11:55:48] :vision_transformer.utils.logger: [INFO] loss: 1.3245386635533536
+[2022-09-23 11:56:09] :vision_transformer.utils.logger: [INFO] loss: 1.3099459527780453
+[2022-09-23 11:56:30] :vision_transformer.utils.logger: [INFO] loss: 1.2897038619739178
+[2022-09-23 11:56:52] :vision_transformer.utils.logger: [INFO] loss: 1.27374201194166
+[2022-09-23 11:57:13] :vision_transformer.utils.logger: [INFO] loss: 1.2792050806097328
+[2022-09-23 11:57:34] :vision_transformer.utils.logger: [INFO] loss: 1.255694933783132
+[2022-09-23 11:57:55] :vision_transformer.utils.logger: [INFO] loss: 1.2610836830763772
+[2022-09-23 11:58:16] :vision_transformer.utils.logger: [INFO] loss: 1.250527175470663
+[2022-09-23 11:58:37] :vision_transformer.utils.logger: [INFO] loss: 1.2203882005268012
+[2022-09-23 11:58:58] :vision_transformer.utils.logger: [INFO] loss: 1.2218489825915986
+[2023-02-22 01:19:36] :vision_transformer.utils.logger: [INFO] (train) epoch: 0 loss: 2.153957894347222
+[2023-02-22 01:19:47] :vision_transformer.utils.logger: [INFO] (valid) epoch: 0 loss: 1.9996114596010397
+[2023-02-22 01:21:42] :vision_transformer.utils.logger: [INFO] (train) epoch: 1 loss: 1.9656118404689844
+[2023-02-22 01:21:54] :vision_transformer.utils.logger: [INFO] (valid) epoch: 1 loss: 1.871126961784241
+[2023-02-22 01:23:48] :vision_transformer.utils.logger: [INFO] (train) epoch: 2 loss: 1.7807142131235534
+[2023-02-22 01:24:00] :vision_transformer.utils.logger: [INFO] (valid) epoch: 2 loss: 1.6914433625559457
+[2023-02-22 11:42:55] :vision_transformer.utils.logger: [INFO] (train) epoch: 0 loss: 2.157657626036719
+[2023-02-22 11:42:57] :vision_transformer.utils.logger: [INFO] (valid) epoch: 0 loss: 2.008200868250082
+[2023-02-22 11:43:39] :vision_transformer.utils.logger: [INFO] (train) epoch: 0 loss: 2.1335342489445126
+[2023-02-22 11:43:41] :vision_transformer.utils.logger: [INFO] (valid) epoch: 0 loss: 1.9891027733921625
+[2023-02-22 11:44:14] :vision_transformer.utils.logger: [INFO] (train) epoch: 1 loss: 1.926246333869695
+[2023-02-22 11:44:17] :vision_transformer.utils.logger: [INFO] (valid) epoch: 1 loss: 1.8048703689544727
+[2023-02-22 11:44:50] :vision_transformer.utils.logger: [INFO] (train) epoch: 2 loss: 1.7553734197421327
+[2023-02-22 11:44:53] :vision_transformer.utils.logger: [INFO] (valid) epoch: 2 loss: 1.6814979185311558
+[2023-02-22 11:45:25] :vision_transformer.utils.logger: [INFO] (train) epoch: 3 loss: 1.6497837631502597
+[2023-02-22 11:45:29] :vision_transformer.utils.logger: [INFO] (valid) epoch: 3 loss: 1.5888509959839403
+[2023-02-22 11:46:03] :vision_transformer.utils.logger: [INFO] (train) epoch: 4 loss: 1.5641524432488
+[2023-02-22 11:46:06] :vision_transformer.utils.logger: [INFO] (valid) epoch: 4 loss: 1.4993006817449015
+[2023-02-22 11:46:43] :vision_transformer.utils.logger: [INFO] (train) epoch: 5 loss: 1.4936718106727453
+[2023-02-22 11:46:48] :vision_transformer.utils.logger: [INFO] (valid) epoch: 5 loss: 1.4742800808562257
+[2023-02-22 11:47:50] :vision_transformer.utils.logger: [INFO] (train) epoch: 6 loss: 1.4457269030660678
+[2023-02-22 11:47:56] :vision_transformer.utils.logger: [INFO] (valid) epoch: 6 loss: 1.4168177010914007
+[2023-02-22 11:48:58] :vision_transformer.utils.logger: [INFO] (train) epoch: 7 loss: 1.412232084336833
+[2023-02-22 11:49:03] :vision_transformer.utils.logger: [INFO] (valid) epoch: 7 loss: 1.3809603151802818
+[2023-02-22 11:50:05] :vision_transformer.utils.logger: [INFO] (train) epoch: 8 loss: 1.3795519165327665
+[2023-02-22 11:50:11] :vision_transformer.utils.logger: [INFO] (valid) epoch: 8 loss: 1.361582969705137
+[2023-02-22 11:51:13] :vision_transformer.utils.logger: [INFO] (train) epoch: 9 loss: 1.3525618805156179
+[2023-02-22 11:51:19] :vision_transformer.utils.logger: [INFO] (valid) epoch: 9 loss: 1.351412864157948
+[2023-02-22 11:52:22] :vision_transformer.utils.logger: [INFO] (train) epoch: 10 loss: 1.324760675239624
+[2023-02-22 11:52:27] :vision_transformer.utils.logger: [INFO] (valid) epoch: 10 loss: 1.315789495794156
+[2023-02-22 11:53:31] :vision_transformer.utils.logger: [INFO] (train) epoch: 11 loss: 1.3025282270543788
+[2023-02-22 11:53:36] :vision_transformer.utils.logger: [INFO] (valid) epoch: 11 loss: 1.295336830158965
+[2023-02-22 11:54:39] :vision_transformer.utils.logger: [INFO] (train) epoch: 12 loss: 1.2786630156020362
+[2023-02-22 11:54:45] :vision_transformer.utils.logger: [INFO] (valid) epoch: 12 loss: 1.282708413684711
+[2023-02-22 11:55:48] :vision_transformer.utils.logger: [INFO] (train) epoch: 13 loss: 1.2563780385640975
+[2023-02-22 11:55:54] :vision_transformer.utils.logger: [INFO] (valid) epoch: 13 loss: 1.2752236350656698
+[2023-02-22 11:56:57] :vision_transformer.utils.logger: [INFO] (train) epoch: 14 loss: 1.234381333994545
+[2023-02-22 11:57:02] :vision_transformer.utils.logger: [INFO] (valid) epoch: 14 loss: 1.2873864512854871
+[2023-02-22 11:58:06] :vision_transformer.utils.logger: [INFO] (train) epoch: 15 loss: 1.2119672930324528
+[2023-02-22 11:58:12] :vision_transformer.utils.logger: [INFO] (valid) epoch: 15 loss: 1.256964715144124
+[2023-02-22 11:59:17] :vision_transformer.utils.logger: [INFO] (train) epoch: 16 loss: 1.1945408219263025
+[2023-02-22 11:59:23] :vision_transformer.utils.logger: [INFO] (valid) epoch: 16 loss: 1.2383734713347194
+[2023-02-22 12:00:31] :vision_transformer.utils.logger: [INFO] (train) epoch: 17 loss: 1.1733261365503054
+[2023-02-22 12:00:37] :vision_transformer.utils.logger: [INFO] (valid) epoch: 17 loss: 1.2286695575180906
+[2023-02-22 12:01:43] :vision_transformer.utils.logger: [INFO] (train) epoch: 18 loss: 1.1563198262121306
+[2023-02-22 12:01:49] :vision_transformer.utils.logger: [INFO] (valid) epoch: 18 loss: 1.2213137884871266
+[2023-02-22 12:02:56] :vision_transformer.utils.logger: [INFO] (train) epoch: 19 loss: 1.135444918963212
+[2023-02-22 12:03:02] :vision_transformer.utils.logger: [INFO] (valid) epoch: 19 loss: 1.2029987703116176
+[2023-03-02 14:34:44] :vision_transformer.utils.logger: [INFO] (train) epoch: 0 loss: 0.2652757709901911
+[2023-03-02 14:36:49] :vision_transformer.utils.logger: [INFO] (train) epoch: 0 loss: 0.2677861152077362
+[2023-03-02 14:36:51] :vision_transformer.utils.logger: [INFO] (valid) epoch: 0 loss: 0.25414331071673874
+[2023-03-02 14:37:24] :vision_transformer.utils.logger: [INFO] (train) epoch: 1 loss: 0.2527910243869972
+[2023-03-02 14:37:27] :vision_transformer.utils.logger: [INFO] (valid) epoch: 1 loss: 0.2498659389658858
+[2023-03-02 14:38:01] :vision_transformer.utils.logger: [INFO] (train) epoch: 2 loss: 0.24607171375669123
+[2023-03-02 14:38:04] :vision_transformer.utils.logger: [INFO] (valid) epoch: 2 loss: 0.2296764944403316
+[2023-03-02 14:38:39] :vision_transformer.utils.logger: [INFO] (train) epoch: 3 loss: 0.2034025355477556
+[2023-03-02 14:38:42] :vision_transformer.utils.logger: [INFO] (valid) epoch: 3 loss: 0.17629342709486476
+[2023-03-02 14:39:15] :vision_transformer.utils.logger: [INFO] (train) epoch: 4 loss: 0.16527353406848622
+[2023-03-02 14:39:18] :vision_transformer.utils.logger: [INFO] (valid) epoch: 4 loss: 0.15178568430316333
+[2023-03-02 14:40:02] :vision_transformer.utils.logger: [INFO] (train) epoch: 5 loss: 0.14971754553603273
+[2023-03-02 14:40:07] :vision_transformer.utils.logger: [INFO] (valid) epoch: 5 loss: 0.14168664570243214
+[2023-03-02 14:41:12] :vision_transformer.utils.logger: [INFO] (train) epoch: 6 loss: 0.1417643295854845
+[2023-03-02 14:41:18] :vision_transformer.utils.logger: [INFO] (valid) epoch: 6 loss: 0.13601769314120754
+[2023-03-02 14:42:23] :vision_transformer.utils.logger: [INFO] (train) epoch: 7 loss: 0.13679592149786207
+[2023-03-02 14:42:28] :vision_transformer.utils.logger: [INFO] (valid) epoch: 7 loss: 0.13115760786369585
+[2023-03-02 14:43:34] :vision_transformer.utils.logger: [INFO] (train) epoch: 8 loss: 0.13176036870639748
+[2023-03-02 14:43:39] :vision_transformer.utils.logger: [INFO] (valid) epoch: 8 loss: 0.12509271728630644
+[2023-03-02 14:44:44] :vision_transformer.utils.logger: [INFO] (train) epoch: 9 loss: 0.1261229686920489
+[2023-03-02 14:44:49] :vision_transformer.utils.logger: [INFO] (valid) epoch: 9 loss: 0.11959427956955883
+[2023-03-02 14:45:54] :vision_transformer.utils.logger: [INFO] (train) epoch: 10 loss: 0.1206701257035508
+[2023-03-02 14:45:59] :vision_transformer.utils.logger: [INFO] (valid) epoch: 10 loss: 0.1147418864809286
+[2023-03-02 14:47:04] :vision_transformer.utils.logger: [INFO] (train) epoch: 11 loss: 0.11681374699659097
+[2023-03-02 14:47:09] :vision_transformer.utils.logger: [INFO] (valid) epoch: 11 loss: 0.1115452606980793
+[2023-03-02 14:48:14] :vision_transformer.utils.logger: [INFO] (train) epoch: 12 loss: 0.11353485258111416
+[2023-03-02 14:48:19] :vision_transformer.utils.logger: [INFO] (valid) epoch: 12 loss: 0.1079568343278699
+[2023-03-02 14:49:24] :vision_transformer.utils.logger: [INFO] (train) epoch: 13 loss: 0.11044413556826854
+[2023-03-02 14:49:29] :vision_transformer.utils.logger: [INFO] (valid) epoch: 13 loss: 0.10495427434151165
+[2023-03-02 14:50:34] :vision_transformer.utils.logger: [INFO] (train) epoch: 14 loss: 0.10735544980868879
+[2023-03-02 14:50:39] :vision_transformer.utils.logger: [INFO] (valid) epoch: 14 loss: 0.10166811755004401
+[2023-03-02 14:51:43] :vision_transformer.utils.logger: [INFO] (train) epoch: 15 loss: 0.10465236288934507
+[2023-03-02 14:51:49] :vision_transformer.utils.logger: [INFO] (valid) epoch: 15 loss: 0.09959476472089847
+[2023-03-02 14:52:53] :vision_transformer.utils.logger: [INFO] (train) epoch: 16 loss: 0.10205451128331042
+[2023-03-02 14:52:58] :vision_transformer.utils.logger: [INFO] (valid) epoch: 16 loss: 0.0966079446930474
+[2023-03-02 14:54:03] :vision_transformer.utils.logger: [INFO] (train) epoch: 17 loss: 0.10001403457525061
+[2023-03-02 14:54:08] :vision_transformer.utils.logger: [INFO] (valid) epoch: 17 loss: 0.09425563217637638
+[2023-03-02 14:55:13] :vision_transformer.utils.logger: [INFO] (train) epoch: 18 loss: 0.09777589564665112
+[2023-03-02 14:55:18] :vision_transformer.utils.logger: [INFO] (valid) epoch: 18 loss: 0.09211149895057892
+[2023-03-02 14:56:23] :vision_transformer.utils.logger: [INFO] (train) epoch: 19 loss: 0.09564148248557623
+[2023-03-02 14:56:28] :vision_transformer.utils.logger: [INFO] (valid) epoch: 19 loss: 0.09034216661041918
+[2023-03-02 15:18:29] :vision_transformer.utils.logger: [INFO] (train) epoch: 0 loss: 0.2657015002067472
+[2023-03-02 15:18:31] :vision_transformer.utils.logger: [INFO] (valid) epoch: 0 loss: 0.2517243130043292
+[2023-03-02 15:19:59] :vision_transformer.utils.logger: [INFO] (train) epoch: 0 loss: 0.26848124978218946
+[2023-03-02 15:20:01] :vision_transformer.utils.logger: [INFO] (valid) epoch: 0 loss: 0.2534543240127472
+[2023-03-02 15:22:25] :vision_transformer.utils.logger: [INFO] (train) epoch: 0 loss: 0.2665885203230175
+[2023-03-02 15:22:27] :vision_transformer.utils.logger: [INFO] (valid) epoch: 0 loss: 0.25385279310777925
+[2023-03-02 15:35:57] :vision_transformer.utils.logger: [INFO] (train) epoch: 0 loss: 0.26515380987660364
+[2023-03-02 15:36:00] :vision_transformer.utils.logger: [INFO] (valid) epoch: 0 loss: 0.2534633842996134
+[2023-03-02 15:37:10] :vision_transformer.utils.logger: [INFO] (train) epoch: 0 loss: 0.2660837641756884
+[2023-03-02 15:37:13] :vision_transformer.utils.logger: [INFO] (valid) epoch: 0 loss: 0.25352250115749553
+[2023-03-02 15:45:57] :vision_transformer.utils.logger: [INFO] (train) epoch: 0 loss: 0.2674721840647498
+[2023-03-02 15:45:59] :vision_transformer.utils.logger: [INFO] (valid) epoch: 0 loss: 0.2539788068483432
+[2023-03-02 15:51:11] :vision_transformer.utils.logger: [INFO] (train) epoch: 0 loss: 0.26358269479171026
+[2023-03-02 15:51:14] :vision_transformer.utils.logger: [INFO] (valid) epoch: 0 loss: 0.2519566998504602
+[2023-03-02 15:52:39] :vision_transformer.utils.logger: [INFO] (train) epoch: 0 loss: 0.26783586041292773
+[2023-03-02 15:52:41] :vision_transformer.utils.logger: [INFO] (valid) epoch: 0 loss: 0.25324558949889464
+[2023-03-02 15:53:13] :vision_transformer.utils.logger: [INFO] (train) epoch: 1 loss: 0.2515460554407868
+[2023-03-02 15:53:16] :vision_transformer.utils.logger: [INFO] (valid) epoch: 1 loss: 0.2472374059331303
+[2023-03-02 16:00:30] :vision_transformer.utils.logger: [INFO] (train) epoch: 0 loss: 0.26400069742727494
+[2023-03-02 16:00:33] :vision_transformer.utils.logger: [INFO] (valid) epoch: 0 loss: 0.25180601607115505
+[2023-03-02 19:05:11] :vision_transformer.utils.logger: [INFO] (train) epoch: 0 loss: 0.26636888993449953
+[2023-03-02 19:05:13] :vision_transformer.utils.logger: [INFO] (valid) epoch: 0 loss: 0.25353879207810653
