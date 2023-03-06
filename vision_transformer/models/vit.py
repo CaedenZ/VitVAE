@@ -15,7 +15,8 @@ class ViT(nn.Module):
         latent_dim: int,
         embed_dim: int,
         patch_size: int,
-        image_size: int,
+        image_size_h: int,
+        image_size_w: int,
         num_blocks: int,
         nb_head: int,
         hidden_dim: int,
@@ -26,7 +27,8 @@ class ViT(nn.Module):
             in_channels=in_channels,
             embed_dim=embed_dim,
             patch_size=patch_size,
-            image_size=image_size,
+            image_size_h=image_size_h,
+            image_size_w=image_size_w,
         )
         self.encoder = nn.Sequential(
             *[
@@ -52,10 +54,10 @@ class ViT(nn.Module):
         self.latent_dim = latent_dim
 
         self.decoder = nn.Sequential(
-            nn.ConvTranspose2d(32, 16, 4,stride=2, output_padding=0),
+            nn.ConvTranspose2d(32, 16, 10,stride=2, output_padding=0),
             nn.BatchNorm2d(16),
             nn.ReLU(True),
-            nn.ConvTranspose2d(16, 8, 3, stride=2,padding=1, output_padding=1),
+            nn.ConvTranspose2d(16, 8, 7, stride=2,padding=1, output_padding=1),
             nn.BatchNorm2d(8),
             nn.ReLU(True),
             nn.ConvTranspose2d(8, 3, 3, stride=2,padding=1, output_padding=1)
@@ -84,6 +86,5 @@ class ViT(nn.Module):
         cls_token = out[:, 0]
         # (B, D) -> (B, M)
         recons = self.decode(cls_token)
-        # print(recons.shape)
         # pred = self.mlp_head(cls_token)
         return recons

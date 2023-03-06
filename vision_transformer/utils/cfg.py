@@ -33,7 +33,8 @@ class Cfg:
             "dir": self.config.get("dataset", "dir"),
             "name": self.config.get("dataset", "name"),
             "in_channels": self.config.getint("dataset", "in_channels"),
-            "image_size": self.config.getint("dataset", "image_size"),
+            "image_size_h": self.config.getint("dataset", "image_size_h"),
+            "image_size_w": self.config.getint("dataset", "image_size_w"),
             "num_classes": self.config.getint("dataset", "num_classes"),
         }
 

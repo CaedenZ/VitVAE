@@ -30,6 +30,8 @@ class PacmanDataset(Dataset):
         img_name = os.path.join(self.root_dir,
                                 self.landmarks_frame.iloc[idx, 0])
         image = io.imread(img_name)
+        image = np.transpose( image, (2, 0, 1))
+        # image.transpose([2,0,1])
         # landmarks = self.landmarks_frame.iloc[idx, 1:]
         # landmarks = np.array([landmarks])
         # landmarks = landmarks.astype('float').reshape(-1, 2)
@@ -37,5 +39,7 @@ class PacmanDataset(Dataset):
 
         if self.transform:
             sample = self.transform(image)
+        
+        _ = []
 
-        return image
+        return image, _

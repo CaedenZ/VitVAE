@@ -44,15 +44,20 @@ class ViTData:
             raise NotImplementedError
 
     def create_Pacman_dataloader(self,batch_size:int,shuffle:bool):
-        data_dir = self.save_dir_path.joinpath("blackened")
+        data_dir = self.save_dir_path.joinpath("resized")
         data_dir = str(data_dir)
-
+        transform = transforms.Compose([
+                    transforms.Resize((384, 384)), 
+                    transforms.ToTensor(),
+                    transforms.Normalize(0.5, 0.5),
+                ])
         pacmandata = PacmanDataset(self.save_dir_path.joinpath('blackened.csv'),data_dir)
 
         # train_set = torchvision.datasets.CIFAR10(
         #     root=save_dir, train=True, download=True, transform=self.transform
         # )
         train_loader = DataLoader(pacmandata, batch_size=batch_size, shuffle=shuffle)
+        # print(next(iter(train_loader)).shape)
 
         # test_set = torchvision.datasets.CIFAR10(
         #     root=save_dir, train=False, download=True, transform=self.transform
