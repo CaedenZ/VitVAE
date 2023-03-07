@@ -1,6 +1,7 @@
 
 import torch
 from pacmandata import PacmanDataset
+from fusiondataset import FusionDataset
 
 import torchvision
 import torchvision.transforms as transforms
@@ -8,7 +9,7 @@ from torch.utils.data import DataLoader
 import matplotlib.pyplot as plt
 from PIL import Image
 
-pacmandata = PacmanDataset(csv_file='blackened.csv',root_dir='blackened')
+pacmandata = FusionDataset(csv_file='blackened.csv',root_dir='resized')
 dataloader = DataLoader(pacmandata,batch_size=32, shuffle=False)
 
 print(next(iter(dataloader)).shape)

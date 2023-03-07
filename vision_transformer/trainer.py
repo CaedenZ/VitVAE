@@ -46,13 +46,16 @@ class Trainer:
                 for tr_data in pbar:
                     # print(tr_data.shape)
                     tr_X = tr_data[0].to(self.device)
-                    # tr_y = tr_data[1].to(self.device)
+                    tr_y = tr_data[1].to(self.device)
                     tr_X = tr_X.float()
+                    tr_y = tr_y.float()
+                    # print(x.shape)
+                    # print(tr_y.shape)
                     self.optimizer.zero_grad()
                     out = model(tr_X)
                     # CrossEntropy
                     loss = nn.MSELoss()
-                    output = loss(tr_X, out)
+                    output = loss(tr_y, out)
                     # loss = self.criterion(out, tr_y)
                     output.backward()
                     self.optimizer.step()

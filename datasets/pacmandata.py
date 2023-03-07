@@ -30,7 +30,6 @@ class PacmanDataset(Dataset):
         img_name = os.path.join(self.root_dir,
                                 self.landmarks_frame.iloc[idx, 0])
         image = io.imread(img_name)
-        image.resize(200,400)
         # landmarks = self.landmarks_frame.iloc[idx, 1:]
         # landmarks = np.array([landmarks])
         # landmarks = landmarks.astype('float').reshape(-1, 2)

@@ -45,6 +45,7 @@ def main():
     train_loader, valid_loader = data.create_dataloader(
         batch_size=dataloader_params["batch_size"], shuffle=dataloader_params["shuffle"]
     )
+    # print(next(iter(train_loader)).shape)
 
     # model = ViT(
     #     in_channels=dataset_params["in_channels"],
@@ -60,41 +61,33 @@ def main():
     #     latent_dim=model_params["latent_dim"]
     # )
     # model.to(device)
-    
-    model = ViT('B_16_imagenet1k', pretrained=True,image_size = 64)
-    model.eval()
-    model.fc = nn.Sequential(
-            nn.Linear(768, 128),
+    if(dataset_params["name"] == 'FUSION'):
+        model = ViT('B_16_imagenet1k', pretrained=True,in_channels = 24, image_size = 64)
+        model.fc = nn.Sequential(
+            nn.Linear(768, 32 * 32 * 3),
             nn.ReLU(True),
-            nn.Linear(128, 3 * 3 * 32),
+            nn.Linear(32 * 32 * 3, 3 * 64 * 64),
             nn.ReLU(True),
-            nn.Unflatten(dim=1,unflattened_size=(32, 3, 3)),
-
-            nn.ConvTranspose2d(32, 16, 10,stride=2, output_padding=0),
-            nn.BatchNorm2d(16),
-            nn.ReLU(True),
-            nn.ConvTranspose2d(16, 8, 7, stride=2,padding=1, output_padding=1),
-            nn.BatchNorm2d(8),
-            nn.ReLU(True),
-            nn.ConvTranspose2d(8, 3, 3, stride=2,padding=1, output_padding=1)
-
-            # nn.ConvTranspose2d(32, 16, 6,stride=2, output_padding=0),
-            # nn.BatchNorm2d(16),
-            # nn.ReLU(True),
-            # nn.ConvTranspose2d(16, 8, 6, stride=2,padding=1, output_padding=1),
-            # nn.BatchNorm2d(8),
-            # nn.ReLU(True),
-            # nn.ConvTranspose2d(8, 3, 5, stride=2,padding=1, output_padding=1),
-            # nn.BatchNorm2d(3),
-            # nn.ReLU(True),
-            # nn.ConvTranspose2d(3, 3, 3, stride=2,padding=1, output_padding=1),
-            # nn.BatchNorm2d(3),
-            # nn.ReLU(True),
-            # nn.ConvTranspose2d(3, 3, 3, stride=2,padding=1, output_padding=1),
-            # nn.BatchNorm2d(3),
-            # nn.ReLU(True),
-            # nn.ConvTranspose2d(3, 3, 3, stride=2,padding=1, output_padding=1), 
+            nn.Unflatten(dim=1,unflattened_size=(3, 64, 64)),
         )
+        
+    # model = ViT('B_16_imagenet1k', pretrained=True,image_size = 64)
+    # model.eval()
+    # model.fc = nn.Sequential(
+    #         nn.Linear(768, 128),
+    #         nn.ReLU(True),
+    #         nn.Linear(128, 3 * 3 * 32),
+    #         nn.ReLU(True),
+    #         nn.Unflatten(dim=1,unflattened_size=(32, 3, 3)),
+
+    #         nn.ConvTranspose2d(32, 16, 10,stride=2, output_padding=0),
+    #         nn.BatchNorm2d(16),
+    #         nn.ReLU(True),
+    #         nn.ConvTranspose2d(16, 8, 7, stride=2,padding=1, output_padding=1),
+    #         nn.BatchNorm2d(8),
+    #         nn.ReLU(True),
+    #         nn.ConvTranspose2d(8, 3, 3, stride=2,padding=1, output_padding=1)
+    #     )
     model.to(device)
 
     criterion = nn.CrossEntropyLoss()
