@@ -64,19 +64,19 @@ def main():
     model = ViT('B_16_imagenet1k', pretrained=True,image_size = 64)
     model.eval()
     model.fc = nn.Sequential(
-            nn.Linear(768, 128),
+            nn.Linear(768, 32 * 32 * 3),
             nn.ReLU(True),
-            nn.Linear(128, 3 * 3 * 32),
+            nn.Linear(32 * 32 * 3, 3 * 64 * 64),
             nn.ReLU(True),
-            nn.Unflatten(dim=1,unflattened_size=(32, 3, 3)),
+            nn.Unflatten(dim=1,unflattened_size=(3, 64, 64)),
 
-            nn.ConvTranspose2d(32, 16, 10,stride=2, output_padding=0),
-            nn.BatchNorm2d(16),
-            nn.ReLU(True),
-            nn.ConvTranspose2d(16, 8, 7, stride=2,padding=1, output_padding=1),
-            nn.BatchNorm2d(8),
-            nn.ReLU(True),
-            nn.ConvTranspose2d(8, 3, 3, stride=2,padding=1, output_padding=1)
+            # nn.ConvTranspose2d(32, 16, 10,stride=2, output_padding=0),
+            # nn.BatchNorm2d(16),
+            # nn.ReLU(True),
+            # nn.ConvTranspose2d(16, 8, 7, stride=2,padding=1, output_padding=1),
+            # nn.BatchNorm2d(8),
+            # nn.ReLU(True),
+            # nn.ConvTranspose2d(8, 3, 3, stride=2,padding=1, output_padding=1)
 
             # nn.ConvTranspose2d(32, 16, 6,stride=2, output_padding=0),
             # nn.BatchNorm2d(16),
@@ -109,6 +109,7 @@ def main():
         optimizer=optimizer,
         device=device,
         save_dir=config_file_dir,
+        image_dir='result'
     )
     trainer.fit(model)
 

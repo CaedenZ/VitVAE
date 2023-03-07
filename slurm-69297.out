@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "run.py", line 8, in <module>
+    from vision_transformer import Trainer, ViT, ViTData
+  File "/home/FYP/fzhao006/fyp/VitVAE/vision_transformer/__init__.py", line 1, in <module>
+    from .dataset import ViTData
+  File "/home/FYP/fzhao006/fyp/VitVAE/vision_transformer/dataset.py", line 11, in <module>
+    @dataclass
+  File "/home/FYP/fzhao006/fyp/VitVAE/vision_transformer/dataset.py", line 34, in ViTData
+    ) -> tuple[DataLoader, DataLoader]:
+TypeError: 'type' object is not subscriptable

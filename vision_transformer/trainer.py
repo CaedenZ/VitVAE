@@ -23,6 +23,7 @@ class Trainer:
         optimizer: Any,
         device: Any,
         save_dir: str,
+        image_dir: str,
     ) -> None:
         self.epochs = epochs
         self.train_loader, self.valid_loader = train_loader, valid_loader
@@ -33,6 +34,7 @@ class Trainer:
 
         self.logger = get_logger(str(Path(self.save_dir).joinpath("log.txt")))
         self.best_loss = float("inf")
+        self.image_dir = image_dir
 
     def fit(self, model: nn.Module) -> None:
         for epoch in range(self.epochs):

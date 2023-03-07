@@ -62,7 +62,7 @@ class ViTData:
         # test_set = torchvision.datasets.CIFAR10(
         #     root=save_dir, train=False, download=True, transform=self.transform
         # )
-        test_loader = DataLoader(pacmandata, batch_size=batch_size, shuffle=False)
+        test_loader = DataLoader(pacmandata, batch_size=batch_size, shuffle=shuffle)
 
         return train_loader, test_loader
 
